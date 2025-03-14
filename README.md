@@ -1,9 +1,32 @@
-HTTPS SSL
+# HTTPS SSL Project
 
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+This project involves configuring a load balancer (HAProxy) and web servers (Nginx) for a high-availability web application with SSL/TLS encryption.
 
-General
-What is HTTPS SSL 2 main roles
-What is the purpose encrypting traffic
-What SSL termination means
+## Learning Objectives
+
+By the end of this project, you will be able to:
+- Explain what HTTPS and SSL are and their two main roles.
+- Understand the purpose of encrypting traffic.
+- Explain what SSL termination means.
+
+## Tasks
+
+### Task 0: World Wide Web
+- Configure DNS records for `www`, `lb-01`, `web-01`, and `web-02`.
+- Write a Bash script (`0-world_wide_web`) to display DNS information.
+
+### Task 1: HAProxy SSL Termination
+- Install Certbot and generate an SSL certificate for `www.ssdsolutions.tech`.
+- Configure HAProxy to handle HTTPS traffic.
+- Test HTTPS access to the website.
+
+### Task 2: Redirect HTTP to HTTPS
+- Configure HAProxy to redirect HTTP traffic to HTTPS.
+- Test HTTP-to-HTTPS redirection.
+
+## Usage
+
+### Task 0: World Wide Web
+To run the Bash script:
+```bash
+./0-world_wide_web ssdsolutions.tech
